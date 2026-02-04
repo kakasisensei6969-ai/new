@@ -80,7 +80,7 @@ export default async function handler(req, res) {
                 'Authorization': `Bearer ${YOUR_QROK_API_KEY}`
             },
             body: JSON.stringify({
-                model: "qrok-model", // Replace with your actual model
+                model: "openai/gpt-oss-120b", // Replace with your actual model
                 messages: messages,
                 temperature: 0.7,
                 max_tokens: 500,
