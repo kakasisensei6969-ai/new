@@ -1,0 +1,15 @@
+{
+  "name": "mental-health-chatbot",
+  "version": "1.0.0",
+  "description": "Bengali Mental Health Chatbot",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "build": "echo 'Build successful'"
+  },
+  "keywords": ["chatbot", "mental-health", "bengali"],
+  "author": "Jahidul Islam",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
