@@ -6,7 +6,7 @@
     <title>মনসাথেরাপি - বাংলা মানসিক স্বাস্থ্য সহায়ক</title>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="container">
@@ -23,35 +23,30 @@
             <div class="sidebar">
                 <div class="quick-questions">
                     <h3>দ্রুত প্রশ্ন:</h3>
-                    <button class="quick-btn" onclick="askQuestion('ডিপ্রেশন এর লক্ষণ কি?')">ডিপ্রেশন এর লক্ষণ</button>
-                    <button class="quick-btn" onclick="askQuestion('অ্যাংজাইটি কমাতে উপায়?')">অ্যাংজাইটি কমাবেন কিভাবে?</button>
-                    <button class="quick-btn" onclick="askQuestion('স্ট্রেস ম্যানেজমেন্ট কিভাবে করব?')">স্ট্রেস ম্যানেজমেন্ট</button>
-                    <button class="quick-btn" onclick="askQuestion('কখন প্রফেশনাল হেল্প নেব?')">কখন বিশেষজ্ঞ দেখাবেন?</button>
+                    <button class="quick-btn" data-question="ডিপ্রেশন এর লক্ষণ কি?">ডিপ্রেশন এর লক্ষণ</button>
+                    <button class="quick-btn" data-question="অ্যাংজাইটি কমাতে উপায়?">অ্যাংজাইটি কমাবেন কিভাবে?</button>
+                    <button class="quick-btn" data-question="স্ট্রেস ম্যানেজমেন্ট কিভাবে করব?">স্ট্রেস ম্যানেজমেন্ট</button>
+                    <button class="quick-btn" data-question="কখন প্রফেশনাল হেল্প নেব?">কখন বিশেষজ্ঞ দেখাবেন?</button>
                 </div>
 
                 <div class="quick-questions">
                     <h3>জরুরি কন্টাক্ট:</h3>
                     <div class="emergency-list">
-                        <p>🇧🇩 জাতীয় জরুরি সেবা: <strong>৯৯৯</strong></p>
-                        <p>🧠 মানসিক স্বাস্থ্য হেল্পলাইন: <strong>০৯৬৩৩-৭৭৫৫৫৫</strong></p>
-                        <p>👩‍👧 নারী ও শিশু নির্যাতন: <strong>১০৯</strong></p>
+                        <!-- JavaScript দিয়ে লোড হবে -->
                     </div>
                 </div>
                 
                 <div class="quick-questions">
                     <h3>সেবাসমূহ:</h3>
                     <div class="services-list">
-                        <p><i class="fas fa-heart"></i> মানসিক স্বাস্থ্য কাউন্সেলিং</p>
-                        <p><i class="fas fa-brain"></i> স্ট্রেস ম্যানেজমেন্ট</p>
-                        <p><i class="fas fa-hand-holding-heart"></i> অ্যাংজাইটি ও ডিপ্রেশন সাপোর্ট</p>
-                        <p><i class="fas fa-moon"></i> স্লিপ ডিসঅর্ডার ম্যানেজমেন্ট</p>
+                        <!-- JavaScript দিয়ে লোড হবে -->
                     </div>
                 </div>
             </div>
 
             <div class="chat-container">
                 <div class="chat-messages" id="chatMessages">
-                    <!-- Messages will be inserted here by JavaScript -->
+                    <!-- Messages will be inserted here -->
                 </div>
 
                 <div class="typing-indicator" id="typingIndicator">
@@ -59,23 +54,24 @@
                 </div>
 
                 <div class="input-area">
-                    <input type="text" id="messageInput" placeholder="আপনার প্রশ্ন বা সমস্যা লিখুন..." onkeypress="handleKeyPress(event)">
-                    <button id="sendButton" onclick="sendMessage()">
+                    <input type="text" id="messageInput" placeholder="আপনার প্রশ্ন বা সমস্যা লিখুন...">
+                    <button id="sendButton">
                         <i class="fas fa-paper-plane"></i> পাঠান
-                    </button>
-                    <button class="voice-btn" onclick="startVoiceInput()">
-                        <i class="fas fa-microphone"></i>
                     </button>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            তৈরি করেছেন: জাহিদুল ইসলাম | ২৪/৭ মানসিক স্বাস্থ্য সহায়তা
+            <div class="footer-info">
+                <span><i class="fas fa-user"></i> জাহিদুল ইসলাম</span>
+                <span><i class="fas fa-clock"></i> ২৪/৭ সার্ভিস</span>
+            </div>
+            <div>মানসিক স্বাস্থ্য সহায়ক চ্যাটবট</div>
         </div>
     </div>
 
     <!-- JavaScript Files -->
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
